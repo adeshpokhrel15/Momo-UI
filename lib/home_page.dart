@@ -21,15 +21,16 @@ class HomePage extends StatelessWidget {
                     Container(
                       height: 50,
                       width: 50,
-                      decoration: const BoxDecoration(
-                          image: DecorationImage(
-                        image: NetworkImage(
-                            'https://raw.githubusercontent.com/rajayogan/flutterui-dumplings/master/assets/model2.jpg'),
-                        fit: BoxFit.cover,
-                      )),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: const DecorationImage(
+                            image: NetworkImage(
+                                'https://media-exp1.licdn.com/dms/image/C5103AQG3S-bEiqFbIw/profile-displayphoto-shrink_800_800/0/1580025162286?e=1668643200&v=beta&t=xlloKEr5WK6vFExuX-TmJbYXgMHSsa2BRL8tVzXFYeA'),
+                            fit: BoxFit.cover,
+                          )),
                     ),
                     const Text(
-                      'Hello Momos',
+                      'Hello Ashwin',
                       style: TextStyle(
                           fontSize: 17,
                           fontWeight: FontWeight.bold,
@@ -39,7 +40,8 @@ class HomePage extends StatelessWidget {
             ),
             IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.cake, color: Colors.grey.withOpacity(0.7))),
+                icon:
+                    Icon(Icons.food_bank, color: Colors.grey.withOpacity(0.7))),
           ],
         ),
       ),
@@ -48,8 +50,8 @@ class HomePage extends StatelessWidget {
         decoration: const BoxDecoration(
             image: DecorationImage(
                 image: NetworkImage(
-                    'https://github.com/rajayogan/flutterui-dumplings/blob/master/assets/dumpling.png'),
-                fit: BoxFit.cover)),
+                    'https://th.bing.com/th/id/R.237eaacd763186a94cd33d98b30aff7b?rik=1Hjx7XAgDb0OlQ&pid=ImgRaw&r=0'),
+                fit: BoxFit.contain)),
       ),
       const SizedBox(height: 20.0),
       const Center(
@@ -64,9 +66,8 @@ class HomePage extends StatelessWidget {
       const SizedBox(height: 10.0),
       const Center(
         child: Text(
-          'मोमो',
+          'मो : मो',
           style: TextStyle(
-              fontFamily: 'OpenSans',
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
               color: Color(0xFF808080)),
@@ -94,14 +95,13 @@ class HomePage extends StatelessWidget {
                         color: const Color(0xFFC4C2C5),
                         onPressed: () {}),
                     SizedBox(
-                      width: 125.0,
+                      width: 143.0,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: const <Widget>[
                           Text(
-                            '\$6.99',
+                            'Rs. 150',
                             style: TextStyle(
-                                // fontFamily: 'OpenSans',
                                 fontSize: 25.0,
                                 fontWeight: FontWeight.bold,
                                 color: Color(0xFF322F2E)),
@@ -142,9 +142,8 @@ class HomePage extends StatelessWidget {
       const SizedBox(height: 3.0),
       const Center(
         child: Text(
-          'Get the second order in half price',
-          style: TextStyle(
-              fontFamily: 'OpenSans', fontSize: 12.0, color: Color(0xFF8E8989)),
+          ' Ashwin grab the second order in half price',
+          style: TextStyle(fontSize: 12.0, color: Color(0xFF8E8989)),
         ),
       ),
     ]));

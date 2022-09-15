@@ -126,10 +126,10 @@ class MoMoPage extends StatelessWidget {
                                       ],
                                       image: const DecorationImage(
                                           image: NetworkImage(
-                                              'https://th.bing.com/th/id/R.9681ce2906f399793783cacb3b024fe9?rik=qldujEBxOgL%2brg&pid=ImgRaw&r=0'),
+                                              'https://media-exp1.licdn.com/dms/image/C5103AQG3S-bEiqFbIw/profile-displayphoto-shrink_800_800/0/1580025162286?e=1668643200&v=beta&t=xlloKEr5WK6vFExuX-TmJbYXgMHSsa2BRL8tVzXFYeA'),
                                           fit: BoxFit.cover)),
                                 ),
-                                const Text('Naryan Dai ko Momo',
+                                const Text('Hello Ashwin',
                                     style: TextStyle(
                                         fontSize: 14.0,
                                         color: Color(0xFF353535),
@@ -160,12 +160,18 @@ class MoMoPage extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Color(0xFF322F2E)),
                     ),
-                    const Image(
-                      image: NetworkImage(
-                          'https://th.bing.com/th/id/R.dc98e1fe73101037bbd5a1cd20ca952b?rik=bgKtKqVQHJUXIA&pid=ImgRaw&r=0'),
-                      fit: BoxFit.cover,
-                      height: 250.0,
-                    )
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                        height: 250,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            image: const DecorationImage(
+                                image: NetworkImage(
+                                  'https://th.bing.com/th/id/R.237eaacd763186a94cd33d98b30aff7b?rik=1Hjx7XAgDb0OlQ&pid=ImgRaw&r=0',
+                                ),
+                                fit: BoxFit.cover)))
                   ],
                 ),
               ))
